@@ -1,0 +1,363 @@
+.class public Lhxu;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Lhyc;
+.implements Lnnj;
+.implements Lnqu;
+.implements Lnqx;
+.implements Lnrb;
+
+
+# instance fields
+.field final a:Landroid/util/SparseArray;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/SparseArray",
+            "<",
+            "Lhxt;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public b:Lhyb;
+
+.field public c:Lhyy;
+
+.field private d:Lhyq;
+
+
+# direct methods
+.method public constructor <init>(Lnqi;)V
+    .locals 1
+
+    .prologue
+    .line 69
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Lhxu;-><init>(Lnqi;C)V
+
+    .line 70
+    return-void
+.end method
+
+.method public constructor <init>(Lnqi;B)V
+    .locals 1
+
+    .prologue
+    .line 76
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Lhxu;-><init>(Lnqi;C)V
+
+    .line 77
+    return-void
+.end method
+
+.method public constructor <init>(Lnqi;C)V
+    .locals 1
+
+    .prologue
+    .line 79
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 60
+    new-instance v0, Landroid/util/SparseArray;
+
+    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
+
+    iput-object v0, p0, Lhxu;->a:Landroid/util/SparseArray;
+
+    .line 80
+    invoke-virtual {p1, p0}, Lnqi;->a(Lnrb;)Lnrb;
+
+    .line 81
+    return-void
+.end method
+
+.method public constructor <init>(Lnqi;Lhyb;Lhyy;Lhyq;)V
+    .locals 1
+
+    .prologue
+    .line 86
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 60
+    new-instance v0, Landroid/util/SparseArray;
+
+    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
+
+    iput-object v0, p0, Lhxu;->a:Landroid/util/SparseArray;
+
+    .line 87
+    iput-object p2, p0, Lhxu;->b:Lhyb;
+
+    .line 88
+    iput-object p3, p0, Lhxu;->c:Lhyy;
+
+    .line 89
+    iput-object p4, p0, Lhxu;->d:Lhyq;
+
+    .line 90
+    invoke-virtual {p1, p0}, Lnqi;->a(Lnrb;)Lnrb;
+
+    .line 91
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(ILhxt;)Lhxu;
+    .locals 3
+
+    .prologue
+    .line 105
+    iget-object v0, p0, Lhxu;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 106
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const/16 v2, 0x42
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v2, "Cannot register more than one handler for a given  id: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 109
+    :cond_0
+    iget-object v0, p0, Lhxu;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v0, p1, p2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    .line 111
+    return-object p0
+.end method
+
+.method public final a(Lnmw;)Lhxu;
+    .locals 1
+
+    .prologue
+    .line 94
+    const-class v0, Lhxu;
+
+    .line 1125
+    invoke-virtual {p1, v0, p0}, Lnmw;->a(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 95
+    return-object p0
+.end method
+
+.method public final a(ILandroid/content/Intent;)V
+    .locals 3
+
+    .prologue
+    .line 131
+    iget-object v0, p0, Lhxu;->d:Lhyq;
+
+    invoke-virtual {v0, p1}, Lhyq;->a(I)V
+
+    .line 133
+    if-nez p2, :cond_0
+
+    .line 134
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    const-string v1, "Intent must not be null!"
+
+    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 137
+    :cond_0
+    iget-object v0, p0, Lhxu;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lhxt;
+
+    .line 138
+    if-nez v0, :cond_1
+
+    .line 139
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const/16 v2, 0x7c
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v2, "You must register a result handler for request code"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, " before starting an activity for result with that request code"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 143
+    :cond_1
+    iget-object v0, p0, Lhxu;->d:Lhyq;
+
+    invoke-virtual {v0, p1}, Lhyq;->b(I)I
+
+    move-result v0
+
+    .line 144
+    iget-object v1, p0, Lhxu;->b:Lhyb;
+
+    .line 2093
+    iget-object v1, v1, Lhyb;->a:Landroid/app/Activity;
+
+    invoke-virtual {v1, p2, v0}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+
+    .line 145
+    return-void
+.end method
+
+.method public final a(Landroid/content/Context;Lnmw;Landroid/os/Bundle;)V
+    .locals 1
+
+    .prologue
+    .line 149
+    const-class v0, Lhyb;
+
+    invoke-virtual {p2, v0}, Lnmw;->a(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lhyb;
+
+    iput-object v0, p0, Lhxu;->b:Lhyb;
+
+    .line 150
+    const-class v0, Lhyy;
+
+    invoke-virtual {p2, v0}, Lnmw;->a(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lhyy;
+
+    iput-object v0, p0, Lhxu;->c:Lhyy;
+
+    .line 151
+    const-class v0, Lhyq;
+
+    invoke-virtual {p2, v0}, Lnmw;->a(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lhyq;
+
+    iput-object v0, p0, Lhxu;->d:Lhyq;
+
+    .line 152
+    return-void
+.end method
+
+.method public final a(Lhxr;)Z
+    .locals 3
+
+    .prologue
+    .line 183
+    iget-object v0, p0, Lhxu;->d:Lhyq;
+
+    iget v1, p1, Lhxr;->a:I
+
+    new-instance v2, Lhxw;
+
+    invoke-direct {v2, p0, p1}, Lhxw;-><init>(Lhxu;Lhxr;)V
+
+    invoke-virtual {v0, v1, v2}, Lhyq;->a(ILhyu;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final b()V
+    .locals 2
+
+    .prologue
+    .line 156
+    iget-object v0, p0, Lhxu;->b:Lhyb;
+
+    .line 3085
+    iget-object v0, v0, Lhyb;->b:Ljava/util/Set;
+
+    invoke-interface {v0, p0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+
+    .line 158
+    iget-object v0, p0, Lhxu;->d:Lhyq;
+
+    new-instance v1, Lhxv;
+
+    invoke-direct {v1, p0}, Lhxv;-><init>(Lhxu;)V
+
+    invoke-virtual {v0, v1}, Lhyq;->a(Lhyr;)V
+
+    .line 174
+    return-void
+.end method
+
+.method public final c()V
+    .locals 1
+
+    .prologue
+    .line 203
+    iget-object v0, p0, Lhxu;->b:Lhyb;
+
+    .line 3089
+    iget-object v0, v0, Lhyb;->b:Ljava/util/Set;
+
+    invoke-interface {v0, p0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    .line 204
+    return-void
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.squares.stream.moderation.SquareSpamHeaderView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/text_red" android:id="@id/remove_post_button" android:background="?selectableItemBackground" android:padding="@dimen/square_card_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/square_remove_post_label" android:layout_weight="0.4" android:textAllCaps="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="@color/quantum_black_text" android:id="@id/report_and_ban_user_button" android:background="?selectableItemBackground" android:padding="@dimen/square_card_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/square_report_and_ban_post_label" android:layout_weight="1.0" android:textAllCaps="true" />
+        <ImageView android:textSize="@dimen/text_size_12" android:id="@id/approve_post_button" android:background="?selectableItemBackground" android:padding="@dimen/square_card_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_check_googgreen_18" android:contentDescription="@string/square_approve_post_label" />
+    </LinearLayout>
+    <View android:background="@color/material_grey_300" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</com.google.android.libraries.social.squares.stream.moderation.SquareSpamHeaderView>

@@ -1,0 +1,34 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: gplus.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '23'
+sharedLibrary: false
+unknownFiles:
+  protobuf.meta: '0'
+  dagger/Core.gwt.xml: '0'
+  dagger/Dagger.gwt.xml: '0'
+  error_prone/Annotations.gwt.xml: '0'
+  javax/inject/Inject.gwt.xml: '0'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '0'
+  jsr330_inject/Jsr330_inject.gwt.xml: '0'
+  third_party/java_src/dagger/project/core/Core.gwt.xml: '0'
+  third_party/java_src/error_prone/Annotations.gwt.xml: '0'
+  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: '0'
+  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: '0'
+  third_party/java_src/jsr330_inject/Jsr330_inject.gwt.xml: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.1.0
+versionInfo:
+  versionCode: '416026915'
+  versionName: 8.1.0.124973427

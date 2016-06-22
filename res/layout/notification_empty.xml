@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.social.media.ui.MediaView android:id="@id/mr_jingles" android:layout_width="@dimen/mr_jingles_size" android:layout_height="@dimen/mr_jingles_size" android:layout_centerInParent="true" size="full" />
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/quantum_black_secondary_text" android:id="@id/no_notifications_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/plus_no_unread_notifications" android:layout_below="@id/mr_jingles" android:layout_centerHorizontal="true" />
+</RelativeLayout>

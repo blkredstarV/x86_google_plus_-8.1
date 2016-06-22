@@ -1,0 +1,1427 @@
+.class public final Lpkq;
+.super Lsap;
+.source "PG"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lsap",
+        "<",
+        "Lpkq;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:I
+
+.field private b:[Lpkr;
+
+.field private c:Ljava/lang/String;
+
+.field private d:Ljava/lang/Boolean;
+
+.field private e:Ljava/lang/String;
+
+.field private f:Ljava/lang/Boolean;
+
+.field private g:Lpkr;
+
+.field private h:Ljava/lang/String;
+
+.field private i:Ljava/lang/Boolean;
+
+.field private j:Ljava/lang/String;
+
+.field private k:Ljava/lang/Boolean;
+
+.field private l:Ljava/lang/Boolean;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 167
+    invoke-direct {p0}, Lsap;-><init>()V
+
+    .line 168
+    invoke-static {}, Lpkr;->b()[Lpkr;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->b:[Lpkr;
+
+    .line 169
+    iput-object v1, p0, Lpkq;->c:Ljava/lang/String;
+
+    .line 170
+    iput-object v1, p0, Lpkq;->d:Ljava/lang/Boolean;
+
+    .line 171
+    iput-object v1, p0, Lpkq;->e:Ljava/lang/String;
+
+    .line 172
+    iput-object v1, p0, Lpkq;->f:Ljava/lang/Boolean;
+
+    .line 173
+    iput-object v1, p0, Lpkq;->h:Ljava/lang/String;
+
+    .line 174
+    const/high16 v0, -0x80000000
+
+    iput v0, p0, Lpkq;->a:I
+
+    .line 175
+    iput-object v1, p0, Lpkq;->i:Ljava/lang/Boolean;
+
+    .line 176
+    iput-object v1, p0, Lpkq;->j:Ljava/lang/String;
+
+    .line 177
+    iput-object v1, p0, Lpkq;->k:Ljava/lang/Boolean;
+
+    .line 178
+    iput-object v1, p0, Lpkq;->l:Ljava/lang/Boolean;
+
+    .line 179
+    const/4 v0, -0x1
+
+    iput v0, p0, Lpkq;->aj:I
+
+    .line 180
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final a()I
+    .locals 5
+
+    .prologue
+    .line 231
+    invoke-super {p0}, Lsap;->a()I
+
+    move-result v1
+
+    .line 232
+    iget-object v0, p0, Lpkq;->b:[Lpkr;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lpkq;->b:[Lpkr;
+
+    array-length v0, v0
+
+    if-lez v0, :cond_1
+
+    .line 233
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v2, p0, Lpkq;->b:[Lpkr;
+
+    array-length v2, v2
+
+    if-ge v0, v2, :cond_1
+
+    .line 234
+    iget-object v2, p0, Lpkq;->b:[Lpkr;
+
+    aget-object v2, v2, v0
+
+    .line 235
+    if-eqz v2, :cond_0
+
+    .line 26072
+    const/16 v3, 0x8
+
+    .line 25981
+    invoke-static {v3}, Lsan;->e(I)I
+
+    move-result v3
+
+    .line 27070
+    invoke-virtual {v2}, Lsaw;->a()I
+
+    move-result v4
+
+    .line 27071
+    iput v4, v2, Lsaw;->aj:I
+
+    .line 26828
+    invoke-static {v4}, Lsan;->e(I)I
+
+    move-result v2
+
+    add-int/2addr v2, v4
+
+    .line 25647
+    add-int/2addr v2, v3
+
+    .line 237
+    add-int/2addr v1, v2
+
+    .line 233
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 241
+    :cond_1
+    iget-object v0, p0, Lpkq;->c:Ljava/lang/String;
+
+    if-eqz v0, :cond_2
+
+    .line 242
+    iget-object v0, p0, Lpkq;->c:Ljava/lang/String;
+
+    .line 28072
+    const/16 v2, 0x30
+
+    .line 27981
+    invoke-static {v2}, Lsan;->e(I)I
+
+    move-result v2
+
+    .line 28810
+    invoke-static {v0}, Lsan;->a(Ljava/lang/CharSequence;)I
+
+    move-result v0
+
+    .line 28811
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v3
+
+    add-int/2addr v0, v3
+
+    .line 27629
+    add-int/2addr v0, v2
+
+    .line 243
+    add-int/2addr v1, v0
+
+    .line 245
+    :cond_2
+    iget-object v0, p0, Lpkq;->d:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_3
+
+    .line 246
+    iget-object v0, p0, Lpkq;->d:Ljava/lang/Boolean;
+
+    .line 247
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 30072
+    const/16 v0, 0x38
+
+    .line 29981
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v0
+
+    .line 29620
+    add-int/lit8 v0, v0, 0x1
+
+    .line 247
+    add-int/2addr v1, v0
+
+    .line 249
+    :cond_3
+    iget-object v0, p0, Lpkq;->e:Ljava/lang/String;
+
+    if-eqz v0, :cond_4
+
+    .line 250
+    iget-object v0, p0, Lpkq;->e:Ljava/lang/String;
+
+    .line 31072
+    const/16 v2, 0x40
+
+    .line 30981
+    invoke-static {v2}, Lsan;->e(I)I
+
+    move-result v2
+
+    .line 31810
+    invoke-static {v0}, Lsan;->a(Ljava/lang/CharSequence;)I
+
+    move-result v0
+
+    .line 31811
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v3
+
+    add-int/2addr v0, v3
+
+    .line 30629
+    add-int/2addr v0, v2
+
+    .line 251
+    add-int/2addr v1, v0
+
+    .line 253
+    :cond_4
+    iget-object v0, p0, Lpkq;->f:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_5
+
+    .line 254
+    iget-object v0, p0, Lpkq;->f:Ljava/lang/Boolean;
+
+    .line 255
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 33072
+    const/16 v0, 0x48
+
+    .line 32981
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v0
+
+    .line 32620
+    add-int/lit8 v0, v0, 0x1
+
+    .line 255
+    add-int/2addr v1, v0
+
+    .line 257
+    :cond_5
+    iget-object v0, p0, Lpkq;->g:Lpkr;
+
+    if-eqz v0, :cond_6
+
+    .line 258
+    iget-object v0, p0, Lpkq;->g:Lpkr;
+
+    .line 34072
+    const/16 v2, 0x50
+
+    .line 33981
+    invoke-static {v2}, Lsan;->e(I)I
+
+    move-result v2
+
+    .line 35070
+    invoke-virtual {v0}, Lsaw;->a()I
+
+    move-result v3
+
+    .line 35071
+    iput v3, v0, Lsaw;->aj:I
+
+    .line 34828
+    invoke-static {v3}, Lsan;->e(I)I
+
+    move-result v0
+
+    add-int/2addr v0, v3
+
+    .line 33647
+    add-int/2addr v0, v2
+
+    .line 259
+    add-int/2addr v1, v0
+
+    .line 261
+    :cond_6
+    iget-object v0, p0, Lpkq;->h:Ljava/lang/String;
+
+    if-eqz v0, :cond_7
+
+    .line 262
+    iget-object v0, p0, Lpkq;->h:Ljava/lang/String;
+
+    .line 36072
+    const/16 v2, 0x58
+
+    .line 35981
+    invoke-static {v2}, Lsan;->e(I)I
+
+    move-result v2
+
+    .line 36810
+    invoke-static {v0}, Lsan;->a(Ljava/lang/CharSequence;)I
+
+    move-result v0
+
+    .line 36811
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v3
+
+    add-int/2addr v0, v3
+
+    .line 35629
+    add-int/2addr v0, v2
+
+    .line 263
+    add-int/2addr v1, v0
+
+    .line 265
+    :cond_7
+    iget v0, p0, Lpkq;->a:I
+
+    const/high16 v2, -0x80000000
+
+    if-eq v0, v2, :cond_8
+
+    .line 266
+    iget v0, p0, Lpkq;->a:I
+
+    .line 38072
+    const/16 v2, 0x60
+
+    .line 37981
+    invoke-static {v2}, Lsan;->e(I)I
+
+    move-result v2
+
+    .line 38773
+    if-ltz v0, :cond_d
+
+    .line 38774
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v0
+
+    .line 37593
+    :goto_1
+    add-int/2addr v0, v2
+
+    .line 267
+    add-int/2addr v1, v0
+
+    .line 269
+    :cond_8
+    iget-object v0, p0, Lpkq;->i:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_9
+
+    .line 270
+    iget-object v0, p0, Lpkq;->i:Ljava/lang/Boolean;
+
+    .line 271
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 40072
+    const/16 v0, 0x68
+
+    .line 39981
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v0
+
+    .line 39620
+    add-int/lit8 v0, v0, 0x1
+
+    .line 271
+    add-int/2addr v1, v0
+
+    .line 273
+    :cond_9
+    iget-object v0, p0, Lpkq;->j:Ljava/lang/String;
+
+    if-eqz v0, :cond_a
+
+    .line 274
+    iget-object v0, p0, Lpkq;->j:Ljava/lang/String;
+
+    .line 41072
+    const/16 v2, 0x70
+
+    .line 40981
+    invoke-static {v2}, Lsan;->e(I)I
+
+    move-result v2
+
+    .line 41810
+    invoke-static {v0}, Lsan;->a(Ljava/lang/CharSequence;)I
+
+    move-result v0
+
+    .line 41811
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v3
+
+    add-int/2addr v0, v3
+
+    .line 40629
+    add-int/2addr v0, v2
+
+    .line 275
+    add-int/2addr v1, v0
+
+    .line 277
+    :cond_a
+    iget-object v0, p0, Lpkq;->k:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_b
+
+    .line 278
+    iget-object v0, p0, Lpkq;->k:Ljava/lang/Boolean;
+
+    .line 279
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 43072
+    const/16 v0, 0x78
+
+    .line 42981
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v0
+
+    .line 42620
+    add-int/lit8 v0, v0, 0x1
+
+    .line 279
+    add-int/2addr v1, v0
+
+    .line 281
+    :cond_b
+    iget-object v0, p0, Lpkq;->l:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_c
+
+    .line 282
+    iget-object v0, p0, Lpkq;->l:Ljava/lang/Boolean;
+
+    .line 283
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 44072
+    const/16 v0, 0x80
+
+    .line 43981
+    invoke-static {v0}, Lsan;->e(I)I
+
+    move-result v0
+
+    .line 43620
+    add-int/lit8 v0, v0, 0x1
+
+    .line 283
+    add-int/2addr v1, v0
+
+    .line 285
+    :cond_c
+    return v1
+
+    .line 38777
+    :cond_d
+    const/16 v0, 0xa
+
+    goto :goto_1
+.end method
+
+.method public final synthetic a(Lsam;)Lsaw;
+    .locals 5
+
+    .prologue
+    const/4 v2, 0x1
+
+    const/4 v1, 0x0
+
+    .line 9
+    .line 44293
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, Lsam;->a()I
+
+    move-result v0
+
+    .line 44294
+    sparse-switch v0, :sswitch_data_0
+
+    .line 44298
+    invoke-super {p0, p1, v0}, Lsap;->a(Lsam;I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 44299
+    :sswitch_0
+    return-object p0
+
+    .line 44304
+    :sswitch_1
+    const/16 v0, 0xa
+
+    .line 44305
+    invoke-static {p1, v0}, Lsbc;->a(Lsam;I)I
+
+    move-result v3
+
+    .line 44306
+    iget-object v0, p0, Lpkq;->b:[Lpkr;
+
+    if-nez v0, :cond_2
+
+    move v0, v1
+
+    .line 44307
+    :goto_1
+    add-int/2addr v3, v0
+
+    new-array v3, v3, [Lpkr;
+
+    .line 44309
+    if-eqz v0, :cond_1
+
+    .line 44310
+    iget-object v4, p0, Lpkq;->b:[Lpkr;
+
+    invoke-static {v4, v1, v3, v1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 44312
+    :cond_1
+    :goto_2
+    array-length v4, v3
+
+    add-int/lit8 v4, v4, -0x1
+
+    if-ge v0, v4, :cond_3
+
+    .line 44313
+    new-instance v4, Lpkr;
+
+    invoke-direct {v4}, Lpkr;-><init>()V
+
+    aput-object v4, v3, v0
+
+    .line 44314
+    aget-object v4, v3, v0
+
+    invoke-virtual {p1, v4}, Lsam;->a(Lsaw;)V
+
+    .line 44315
+    invoke-virtual {p1}, Lsam;->a()I
+
+    .line 44312
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_2
+
+    .line 44306
+    :cond_2
+    iget-object v0, p0, Lpkq;->b:[Lpkr;
+
+    array-length v0, v0
+
+    goto :goto_1
+
+    .line 44318
+    :cond_3
+    new-instance v4, Lpkr;
+
+    invoke-direct {v4}, Lpkr;-><init>()V
+
+    aput-object v4, v3, v0
+
+    .line 44319
+    aget-object v0, v3, v0
+
+    invoke-virtual {p1, v0}, Lsam;->a(Lsaw;)V
+
+    .line 44320
+    iput-object v3, p0, Lpkq;->b:[Lpkr;
+
+    goto :goto_0
+
+    .line 44324
+    :sswitch_2
+    invoke-virtual {p1}, Lsam;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->c:Ljava/lang/String;
+
+    goto :goto_0
+
+    .line 45184
+    :sswitch_3
+    invoke-virtual {p1}, Lsam;->i()I
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    move v0, v2
+
+    .line 44328
+    :goto_3
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->d:Ljava/lang/Boolean;
+
+    goto :goto_0
+
+    :cond_4
+    move v0, v1
+
+    .line 45184
+    goto :goto_3
+
+    .line 44332
+    :sswitch_4
+    invoke-virtual {p1}, Lsam;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->e:Ljava/lang/String;
+
+    goto :goto_0
+
+    .line 46184
+    :sswitch_5
+    invoke-virtual {p1}, Lsam;->i()I
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    move v0, v2
+
+    .line 44336
+    :goto_4
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->f:Ljava/lang/Boolean;
+
+    goto :goto_0
+
+    :cond_5
+    move v0, v1
+
+    .line 46184
+    goto :goto_4
+
+    .line 44340
+    :sswitch_6
+    iget-object v0, p0, Lpkq;->g:Lpkr;
+
+    if-nez v0, :cond_6
+
+    .line 44341
+    new-instance v0, Lpkr;
+
+    invoke-direct {v0}, Lpkr;-><init>()V
+
+    iput-object v0, p0, Lpkq;->g:Lpkr;
+
+    .line 44343
+    :cond_6
+    iget-object v0, p0, Lpkq;->g:Lpkr;
+
+    invoke-virtual {p1, v0}, Lsam;->a(Lsaw;)V
+
+    goto/16 :goto_0
+
+    .line 44347
+    :sswitch_7
+    invoke-virtual {p1}, Lsam;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->h:Ljava/lang/String;
+
+    goto/16 :goto_0
+
+    .line 47169
+    :sswitch_8
+    invoke-virtual {p1}, Lsam;->i()I
+
+    move-result v0
+
+    .line 44352
+    packed-switch v0, :pswitch_data_0
+
+    goto/16 :goto_0
+
+    .line 44356
+    :pswitch_0
+    iput v0, p0, Lpkq;->a:I
+
+    goto/16 :goto_0
+
+    .line 47184
+    :sswitch_9
+    invoke-virtual {p1}, Lsam;->i()I
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    move v0, v2
+
+    .line 44362
+    :goto_5
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->i:Ljava/lang/Boolean;
+
+    goto/16 :goto_0
+
+    :cond_7
+    move v0, v1
+
+    .line 47184
+    goto :goto_5
+
+    .line 44366
+    :sswitch_a
+    invoke-virtual {p1}, Lsam;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->j:Ljava/lang/String;
+
+    goto/16 :goto_0
+
+    .line 48184
+    :sswitch_b
+    invoke-virtual {p1}, Lsam;->i()I
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    move v0, v2
+
+    .line 44370
+    :goto_6
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->k:Ljava/lang/Boolean;
+
+    goto/16 :goto_0
+
+    :cond_8
+    move v0, v1
+
+    .line 48184
+    goto :goto_6
+
+    .line 49184
+    :sswitch_c
+    invoke-virtual {p1}, Lsam;->i()I
+
+    move-result v0
+
+    if-eqz v0, :cond_9
+
+    move v0, v2
+
+    .line 44374
+    :goto_7
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lpkq;->l:Ljava/lang/Boolean;
+
+    goto/16 :goto_0
+
+    :cond_9
+    move v0, v1
+
+    .line 49184
+    goto :goto_7
+
+    .line 44294
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        0x0 -> :sswitch_0
+        0xa -> :sswitch_1
+        0x32 -> :sswitch_2
+        0x38 -> :sswitch_3
+        0x42 -> :sswitch_4
+        0x48 -> :sswitch_5
+        0x52 -> :sswitch_6
+        0x5a -> :sswitch_7
+        0x60 -> :sswitch_8
+        0x68 -> :sswitch_9
+        0x72 -> :sswitch_a
+        0x78 -> :sswitch_b
+        0x80 -> :sswitch_c
+    .end sparse-switch
+
+    .line 44352
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final a(Lsan;)V
+    .locals 5
+
+    .prologue
+    const/4 v2, 0x1
+
+    const/4 v1, 0x0
+
+    .line 185
+    iget-object v0, p0, Lpkq;->b:[Lpkr;
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lpkq;->b:[Lpkr;
+
+    array-length v0, v0
+
+    if-lez v0, :cond_2
+
+    move v0, v1
+
+    .line 186
+    :goto_0
+    iget-object v3, p0, Lpkq;->b:[Lpkr;
+
+    array-length v3, v3
+
+    if-ge v0, v3, :cond_2
+
+    .line 187
+    iget-object v3, p0, Lpkq;->b:[Lpkr;
+
+    aget-object v3, v3, v0
+
+    .line 188
+    if-eqz v3, :cond_1
+
+    .line 2072
+    const/16 v4, 0xa
+
+    .line 1976
+    invoke-virtual {p1, v4}, Lsan;->d(I)V
+
+    .line 3057
+    iget v4, v3, Lsaw;->aj:I
+
+    if-gez v4, :cond_0
+
+    .line 3070
+    invoke-virtual {v3}, Lsaw;->a()I
+
+    move-result v4
+
+    .line 3071
+    iput v4, v3, Lsaw;->aj:I
+
+    .line 3061
+    :cond_0
+    iget v4, v3, Lsaw;->aj:I
+
+    .line 2510
+    invoke-virtual {p1, v4}, Lsan;->d(I)V
+
+    .line 2511
+    invoke-virtual {v3, p1}, Lsaw;->a(Lsan;)V
+
+    .line 186
+    :cond_1
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 193
+    :cond_2
+    iget-object v0, p0, Lpkq;->c:Ljava/lang/String;
+
+    if-eqz v0, :cond_3
+
+    .line 194
+    iget-object v0, p0, Lpkq;->c:Ljava/lang/String;
+
+    .line 4072
+    const/16 v3, 0x32
+
+    .line 3976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 3152
+    invoke-virtual {p1, v0}, Lsan;->a(Ljava/lang/String;)V
+
+    .line 196
+    :cond_3
+    iget-object v0, p0, Lpkq;->d:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_6
+
+    .line 197
+    iget-object v0, p0, Lpkq;->d:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    .line 5072
+    const/16 v3, 0x38
+
+    .line 4976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 5292
+    if-eqz v0, :cond_4
+
+    move v0, v2
+
+    .line 5954
+    :goto_1
+    int-to-byte v0, v0
+
+    .line 6944
+    iget-object v3, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v3}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+
+    move-result v3
+
+    if-nez v3, :cond_5
+
+    .line 6946
+    new-instance v0, Lsao;
+
+    iget-object v1, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+
+    move-result v1
+
+    iget-object v2, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Lsao;-><init>(II)V
+
+    throw v0
+
+    :cond_4
+    move v0, v1
+
+    .line 5292
+    goto :goto_1
+
+    .line 6949
+    :cond_5
+    iget-object v3, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v3, v0}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
+
+    .line 199
+    :cond_6
+    iget-object v0, p0, Lpkq;->e:Ljava/lang/String;
+
+    if-eqz v0, :cond_7
+
+    .line 200
+    iget-object v0, p0, Lpkq;->e:Ljava/lang/String;
+
+    .line 8072
+    const/16 v3, 0x42
+
+    .line 7976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 7152
+    invoke-virtual {p1, v0}, Lsan;->a(Ljava/lang/String;)V
+
+    .line 202
+    :cond_7
+    iget-object v0, p0, Lpkq;->f:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_a
+
+    .line 203
+    iget-object v0, p0, Lpkq;->f:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    .line 9072
+    const/16 v3, 0x48
+
+    .line 8976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 9292
+    if-eqz v0, :cond_8
+
+    move v0, v2
+
+    .line 9954
+    :goto_2
+    int-to-byte v0, v0
+
+    .line 10944
+    iget-object v3, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v3}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+
+    move-result v3
+
+    if-nez v3, :cond_9
+
+    .line 10946
+    new-instance v0, Lsao;
+
+    iget-object v1, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+
+    move-result v1
+
+    iget-object v2, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Lsao;-><init>(II)V
+
+    throw v0
+
+    :cond_8
+    move v0, v1
+
+    .line 9292
+    goto :goto_2
+
+    .line 10949
+    :cond_9
+    iget-object v3, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v3, v0}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
+
+    .line 205
+    :cond_a
+    iget-object v0, p0, Lpkq;->g:Lpkr;
+
+    if-eqz v0, :cond_c
+
+    .line 206
+    iget-object v0, p0, Lpkq;->g:Lpkr;
+
+    .line 12072
+    const/16 v3, 0x52
+
+    .line 11976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 13057
+    iget v3, v0, Lsaw;->aj:I
+
+    if-gez v3, :cond_b
+
+    .line 13070
+    invoke-virtual {v0}, Lsaw;->a()I
+
+    move-result v3
+
+    .line 13071
+    iput v3, v0, Lsaw;->aj:I
+
+    .line 13061
+    :cond_b
+    iget v3, v0, Lsaw;->aj:I
+
+    .line 12510
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 12511
+    invoke-virtual {v0, p1}, Lsaw;->a(Lsan;)V
+
+    .line 208
+    :cond_c
+    iget-object v0, p0, Lpkq;->h:Ljava/lang/String;
+
+    if-eqz v0, :cond_d
+
+    .line 209
+    iget-object v0, p0, Lpkq;->h:Ljava/lang/String;
+
+    .line 14072
+    const/16 v3, 0x5a
+
+    .line 13976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 13152
+    invoke-virtual {p1, v0}, Lsan;->a(Ljava/lang/String;)V
+
+    .line 211
+    :cond_d
+    iget v0, p0, Lpkq;->a:I
+
+    const/high16 v3, -0x80000000
+
+    if-eq v0, v3, :cond_e
+
+    .line 212
+    iget v0, p0, Lpkq;->a:I
+
+    .line 15072
+    const/16 v3, 0x60
+
+    .line 14976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 14124
+    invoke-virtual {p1, v0}, Lsan;->a(I)V
+
+    .line 214
+    :cond_e
+    iget-object v0, p0, Lpkq;->i:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_11
+
+    .line 215
+    iget-object v0, p0, Lpkq;->i:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    .line 16072
+    const/16 v3, 0x68
+
+    .line 15976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 16292
+    if-eqz v0, :cond_f
+
+    move v0, v2
+
+    .line 16954
+    :goto_3
+    int-to-byte v0, v0
+
+    .line 17944
+    iget-object v3, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v3}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+
+    move-result v3
+
+    if-nez v3, :cond_10
+
+    .line 17946
+    new-instance v0, Lsao;
+
+    iget-object v1, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+
+    move-result v1
+
+    iget-object v2, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Lsao;-><init>(II)V
+
+    throw v0
+
+    :cond_f
+    move v0, v1
+
+    .line 16292
+    goto :goto_3
+
+    .line 17949
+    :cond_10
+    iget-object v3, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v3, v0}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
+
+    .line 217
+    :cond_11
+    iget-object v0, p0, Lpkq;->j:Ljava/lang/String;
+
+    if-eqz v0, :cond_12
+
+    .line 218
+    iget-object v0, p0, Lpkq;->j:Ljava/lang/String;
+
+    .line 19072
+    const/16 v3, 0x72
+
+    .line 18976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 18152
+    invoke-virtual {p1, v0}, Lsan;->a(Ljava/lang/String;)V
+
+    .line 220
+    :cond_12
+    iget-object v0, p0, Lpkq;->k:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_15
+
+    .line 221
+    iget-object v0, p0, Lpkq;->k:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    .line 20072
+    const/16 v3, 0x78
+
+    .line 19976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 20292
+    if-eqz v0, :cond_13
+
+    move v0, v2
+
+    .line 20954
+    :goto_4
+    int-to-byte v0, v0
+
+    .line 21944
+    iget-object v3, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v3}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+
+    move-result v3
+
+    if-nez v3, :cond_14
+
+    .line 21946
+    new-instance v0, Lsao;
+
+    iget-object v1, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+
+    move-result v1
+
+    iget-object v2, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Lsao;-><init>(II)V
+
+    throw v0
+
+    :cond_13
+    move v0, v1
+
+    .line 20292
+    goto :goto_4
+
+    .line 21949
+    :cond_14
+    iget-object v3, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v3, v0}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
+
+    .line 223
+    :cond_15
+    iget-object v0, p0, Lpkq;->l:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_18
+
+    .line 224
+    iget-object v0, p0, Lpkq;->l:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    .line 23072
+    const/16 v3, 0x80
+
+    .line 22976
+    invoke-virtual {p1, v3}, Lsan;->d(I)V
+
+    .line 23292
+    if-eqz v0, :cond_16
+
+    .line 23954
+    :goto_5
+    int-to-byte v0, v2
+
+    .line 24944
+    iget-object v1, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->hasRemaining()Z
+
+    move-result v1
+
+    if-nez v1, :cond_17
+
+    .line 24946
+    new-instance v0, Lsao;
+
+    iget-object v1, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->position()I
+
+    move-result v1
+
+    iget-object v2, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->limit()I
+
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Lsao;-><init>(II)V
+
+    throw v0
+
+    :cond_16
+    move v2, v1
+
+    .line 23292
+    goto :goto_5
+
+    .line 24949
+    :cond_17
+    iget-object v1, p1, Lsan;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v1, v0}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
+
+    .line 226
+    :cond_18
+    invoke-super {p0, p1}, Lsap;->a(Lsan;)V
+
+    .line 227
+    return-void
+.end method

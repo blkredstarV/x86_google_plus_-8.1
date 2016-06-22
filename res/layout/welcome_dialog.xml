@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/dialog_illustration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null" />
+        <TextView android:textAppearance="@style/TextStyle.Plusone.WelcomeDialogTitle" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/welcome_dialog_text_margin" android:layout_marginTop="@dimen/welcome_dialog_text_margin" android:layout_marginRight="@dimen/welcome_dialog_text_margin" android:layout_marginStart="@dimen/welcome_dialog_text_margin" android:layout_marginEnd="@dimen/welcome_dialog_text_margin" />
+        <TextView android:textAppearance="@style/TextStyle.Plusone.WelcomeDialogSubText" android:id="@id/dialog_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/welcome_dialog_text_margin" android:layout_marginTop="@dimen/welcome_dialog_subtext_topmargin" android:layout_marginRight="@dimen/welcome_dialog_text_margin" android:layout_marginStart="@dimen/welcome_dialog_text_margin" android:layout_marginEnd="@dimen/welcome_dialog_text_margin" />
+    </LinearLayout>
+</ScrollView>

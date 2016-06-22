@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcome_dialog_subtext_topmargin">10.0dip</dimen>
+    <dimen name="welcome_dialog_text_margin">15.0dip</dimen>
+    <dimen name="welcome_dialog_width">310.0dip</dimen>
+</resources>
